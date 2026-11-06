@@ -73,6 +73,7 @@ ol.tracks li{display:flex;align-items:baseline;gap:20px;padding:14px 0;border-bo
 
 dl.credits{display:grid;grid-template-columns:minmax(110px,200px) minmax(0,1fr);margin:0;max-width:720px;border-top:1px solid var(--rule)}
 dl.credits dt{padding:14px 16px 14px 0;border-bottom:1px solid var(--rule);font-family:var(--mono);font-size:13px;color:var(--muted)}
+.pf{display:block}.pf+.pf{margin-top:6px}
 dl.credits dd{margin:0;padding:14px 0;border-bottom:1px solid var(--rule);font-size:17px}
 
 .photos{display:flex;flex-wrap:wrap;gap:16px}
@@ -98,16 +99,7 @@ footer.bottom{display:flex;flex-wrap:wrap;justify-content:space-between;align-it
 <main>
 <section class="hero">
 <div class="cover-col">
-<!-- STAND-IN COVER: replace this whole .cover-box with
-     <img src="cover.jpg" alt="Like A Light, album cover" width="1200" height="1200" style="width:100%;height:auto;display:block">
-     once the 3000 x 3000 cover is added to this folder (resize a copy to about 1200 px for the web). -->
-<div class="cover-box">
-<div class="cover" role="img" aria-label="Album cover: Like A Light, white lettering on black">
-<div>Like</div>
-<div>A</div>
-<div>Light</div>
-</div>
-</div>
+<img src="cover.jpg" alt="Like A Light, album cover" width="1200" height="1200" style="width:100%;height:auto;display:block">
 </div>
 <div class="text-col">
 <div class="eyebrow">New album · Out November 6, 2026</div>
@@ -145,13 +137,13 @@ footer.bottom{display:flex;flex-wrap:wrap;justify-content:space-between;align-it
 <section class="band">
 <h2>Credits</h2>
 <dl class="credits">
-<dt>Songs</dt><dd>[Name]</dd>
+<dt>Songs</dt><dd>Ethan Grossman</dd>
+<dt>Executive producer</dt><dd>Ethan Grossman</dd>
+<dt>Associate producers</dt><dd>Richard Howell, James Henry</dd>
 <dt>Guitar parts</dt><dd>Dave Smith</dd>
-<dt>Finished with</dt><dd>James Henry, Richard Howell</dd>
-<dt>Performers and instruments</dt><dd>[from your credit sheet]</dd>
-<dt>Mastered by</dt><dd>[Name]</dd>
-<dt>Cover</dt><dd>[Name]</dd>
-<dt>Thanks</dt><dd>Ed Quamen, Andy Moorer, Dave Aguilar</dd>
+<dt>Performers and instruments</dt><dd><span class="pf">Ethan Grossman: lead vocals, bass, keyboards, percussion</span><span class="pf">Richard Howell: background vocals, saxes, keyboards and synth</span><span class="pf">Dave Smith: guitar, background vocals</span><span class="pf">James Henry: drums, percussion</span><span class="pf">Ed Quamen: drums</span><span class="pf">Elé Howell: percussion, drums</span><span class="pf">David Aguilar: slide guitar</span><span class="pf">Andy Moorer: banjo, saxes</span></dd>
+<dt>Recorded, mixed and mastered by</dt><dd>Ethan Grossman</dd>
+<dt>Cover</dt><dd>Ethan Grossman</dd>
 <dt>Label</dt><dd>Blithedale Canyon</dd>
 </dl>
 </section>
